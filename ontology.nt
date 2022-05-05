@@ -1,4 +1,5 @@
-<http://www.semanticweb.org/admin/ontologies/2022/4/untitled-ontology-30> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12> .
 # 
 # 
 # #################################################################
@@ -8,10 +9,42 @@
 # #################################################################
 # 
 # 
-# https://schema.org/belongsTo
-<https://schema.org/belongsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://schema.org/belongsTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Feature> .
-<https://schema.org/belongsTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/User> .
+# http://contextus.net/ontology/ontomedia/ext/common/being#has-mental-disorder
+<http://contextus.net/ontology/ontomedia/ext/common/being#has-mental-disorder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://contextus.net/ontology/ontomedia/ext/common/being#has-mental-disorder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Patient> .
+<http://contextus.net/ontology/ontomedia/ext/common/being#has-mental-disorder> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/timebank#MentalDisorder> .
+# 
+# http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#has-post
+<http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#has-post> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#has-post> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdfs.org/sioc/ns#UserAccount> .
+<http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#has-post> <http://www.w3.org/2000/01/rdf-schema#range> <http://rdfs.org/sioc/ns#Post> .
+# 
+# http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#has_cured
+<http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#has_cured> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#has_cured> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Physician> .
+<http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#has_cured> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Patient> .
+# 
+# http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#has_feature
+<http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#has_feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#has_feature> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rdfs.org/sioc/ns#Post> .
+<http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#has_feature> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/linguistics/gold/feature> .
+# 
+# http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#has_symptom
+<http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#has_symptom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#has_symptom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Patient> .
+<http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#has_symptom> <http://www.w3.org/2000/01/rdf-schema#range> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasExpertise
+<http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasExpertise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
 # 
 # 
@@ -22,13 +55,90 @@
 # #################################################################
 # 
 # 
+# http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28143
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28143> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28143> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/timebank#MentalDisorder> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28143> <http://www.w3.org/2000/01/rdf-schema#label> "ControlGroup" .
+# 
+# http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2982
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2982> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2982> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/timebank#MentalDisorder> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2982> <http://www.w3.org/2000/01/rdf-schema#label> "DepressionDisorder" .
+# 
+# http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> <http://www.w3.org/2000/01/rdf-schema#label> "Symptoms" .
+# 
+# http://purl.bioontology.org/ontology/MEDLINEPLUS/C0028768
+<http://purl.bioontology.org/ontology/MEDLINEPLUS/C0028768> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/MEDLINEPLUS/C0028768> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/timebank#MentalDisorder> .
+<http://purl.bioontology.org/ontology/MEDLINEPLUS/C0028768> <http://www.w3.org/2000/01/rdf-schema#label> "ObsessiveCompulsiveDisorder" .
+# 
+# http://purl.bioontology.org/ontology/MEDLINEPLUS/C0038436
+<http://purl.bioontology.org/ontology/MEDLINEPLUS/C0038436> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/MEDLINEPLUS/C0038436> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/timebank#MentalDisorder> .
+<http://purl.bioontology.org/ontology/MEDLINEPLUS/C0038436> <http://www.w3.org/2000/01/rdf-schema#label> "PostTraumaticStressDisorder" .
+# 
+# http://purl.bioontology.org/ontology/SNOMEDCT/197480006
+<http://purl.bioontology.org/ontology/SNOMEDCT/197480006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/197480006> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/timebank#MentalDisorder> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/197480006> <http://www.w3.org/2000/01/rdf-schema#label> "AnxietyDisorder" .
+# 
+# http://purl.obolibrary.org/obo/MFOEM_000009
+<http://purl.obolibrary.org/obo/MFOEM_000009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/MFOEM_000009> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Psycholinguistics> .
+<http://purl.obolibrary.org/obo/MFOEM_000009> <http://www.w3.org/2000/01/rdf-schema#label> "Anger" .
+# 
+# http://purl.obolibrary.org/obo/MFOEM_000028
+<http://purl.obolibrary.org/obo/MFOEM_000028> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/MFOEM_000028> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Psycholinguistics> .
+<http://purl.obolibrary.org/obo/MFOEM_000028> <http://www.w3.org/2000/01/rdf-schema#label> "Anxiety" .
+# 
+# http://purl.obolibrary.org/obo/MFOEM_000056
+<http://purl.obolibrary.org/obo/MFOEM_000056> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/MFOEM_000056> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Psycholinguistics> .
+<http://purl.obolibrary.org/obo/MFOEM_000056> <http://www.w3.org/2000/01/rdf-schema#label> "Sadness" .
+# 
+# http://purl.org/linguistics/gold/Phrase
+<http://purl.org/linguistics/gold/Phrase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/linguistics/gold/Phrase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Content> .
+# 
+# http://purl.org/linguistics/gold/feature
+<http://purl.org/linguistics/gold/feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/linguistics/gold/feature> <http://www.w3.org/2000/01/rdf-schema#label> "Features\n" .
+# 
+# http://rdfs.org/sioc/ns#Post
+<http://rdfs.org/sioc/ns#Post> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rdfs.org/sioc/ns#Post> <http://www.w3.org/2000/01/rdf-schema#label> "SocialPost" .
+# 
+# http://rdfs.org/sioc/ns#UserAccount
+<http://rdfs.org/sioc/ns#UserAccount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rdfs.org/sioc/ns#UserAccount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<http://rdfs.org/sioc/ns#UserAccount> <http://www.w3.org/2000/01/rdf-schema#label> "SocialMediaUser" .
+# 
+# http://schema.org/Patient
+<http://schema.org/Patient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Patient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+# 
+# http://schema.org/Physician
+<http://schema.org/Physician> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Physician> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+# 
+# http://www.lexinfo.net/ontology/2.0/lexinfo#Pronoun
+<http://www.lexinfo.net/ontology/2.0/lexinfo#Pronoun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.lexinfo.net/ontology/2.0/lexinfo#Pronoun> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Psycholinguistics> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/topic
+<http://xmlns.com/foaf/0.1/topic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/topic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/linguistics/gold/feature> .
+<http://xmlns.com/foaf/0.1/topic> <http://www.w3.org/2000/01/rdf-schema#label> "Topics" .
+# 
 # https://schema.org/Affective
 <https://schema.org/Affective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://schema.org/Affective> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Feature> .
-# 
-# https://schema.org/Anxiety
-<https://schema.org/Anxiety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://schema.org/Anxiety> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/User> .
+<https://schema.org/Affective> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/linguistics/gold/feature> .
 # 
 # https://schema.org/Bigrams
 <https://schema.org/Bigrams> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -36,42 +146,19 @@
 # 
 # https://schema.org/Content
 <https://schema.org/Content> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://schema.org/Content> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Feature> .
-# 
-# https://schema.org/Control
-<https://schema.org/Control> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://schema.org/Control> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/User> .
-# 
-# https://schema.org/Depression
-<https://schema.org/Depression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://schema.org/Depression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/User> .
+<https://schema.org/Content> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/linguistics/gold/feature> .
 # 
 # https://schema.org/Emoticons
 <https://schema.org/Emoticons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://schema.org/Emoticons> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Feature> .
-# 
-# https://schema.org/Feature
-<https://schema.org/Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://schema.org/OCD
-<https://schema.org/OCD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://schema.org/OCD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/User> .
-# 
-# https://schema.org/PTSD
-<https://schema.org/PTSD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://schema.org/PTSD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/User> .
-# 
-# https://schema.org/Phrases
-<https://schema.org/Phrases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://schema.org/Phrases> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Content> .
+<https://schema.org/Emoticons> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/linguistics/gold/feature> .
 # 
 # https://schema.org/Psycholinguistics
 <https://schema.org/Psycholinguistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://schema.org/Psycholinguistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Feature> .
+<https://schema.org/Psycholinguistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/linguistics/gold/feature> .
 # 
-# https://schema.org/Topics
-<https://schema.org/Topics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://schema.org/Topics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Feature> .
+# https://schema.org/SomaticSymptoms
+<https://schema.org/SomaticSymptoms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/SomaticSymptoms> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
 # 
 # https://schema.org/Trigrams
 <https://schema.org/Trigrams> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -81,7 +168,453 @@
 <https://schema.org/Unigrams> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://schema.org/Unigrams> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Content> .
 # 
-# https://schema.org/User
-<https://schema.org/User> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# https://w3id.org/timebank#MentalDisorder
+<https://w3id.org/timebank#MentalDisorder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://schema.org/ache
+<https://schema.org/ache> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/ache> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+<https://schema.org/ache> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/cramp> .
+<https://schema.org/ache> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/headache> .
+<https://schema.org/ache> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/pain> .
+# 
+# https://schema.org/cramp
+# 
+# https://schema.org/headache
+# 
+# https://schema.org/pain
+# 
+# https://schema.org/anxiety
+<https://schema.org/anxiety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/anxiety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+<https://schema.org/anxiety> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/anxious> .
+# 
+# https://schema.org/anxious
+# 
+# https://schema.org/anxious
+<https://schema.org/anxious> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/anxious> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+# 
+# https://schema.org/appetite_loss
+<https://schema.org/appetite_loss> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/appetite_loss> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+<https://schema.org/appetite_loss> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/loss_of_appetite> .
+# 
+# https://schema.org/loss_of_appetite
+# 
+# https://schema.org/ashamed
+<https://schema.org/ashamed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/ashamed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+<https://schema.org/ashamed> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/shame> .
+# 
+# https://schema.org/shame
+# 
+# https://schema.org/change_in_eating_habit
+<https://schema.org/change_in_eating_habit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/change_in_eating_habit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/SomaticSymptoms> .
+<https://schema.org/change_in_eating_habit> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/eating_problem> .
+# 
+# https://schema.org/eating_problem
+# 
+# https://schema.org/change_in_sleeping_habit
+<https://schema.org/change_in_sleeping_habit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/change_in_sleeping_habit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/SomaticSymptoms> .
+<https://schema.org/change_in_sleeping_habit> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/sleeping_problem> .
+# 
+# https://schema.org/sleeping_problem
+# 
+# https://schema.org/concentration_problem
+<https://schema.org/concentration_problem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/concentration_problem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+# 
+# https://schema.org/cramp
+<https://schema.org/cramp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/cramp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+<https://schema.org/cramp> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/cramps> .
+<https://schema.org/cramp> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/pain> .
+# 
+# https://schema.org/cramps
+# 
+# https://schema.org/pain
+# 
+# https://schema.org/cramps
+<https://schema.org/cramps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/cramps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+<https://schema.org/cramps> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/headache> .
+# 
+# https://schema.org/headache
+# 
+# https://schema.org/despair
+<https://schema.org/despair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/despair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+# 
+# https://schema.org/digestive_problem
+<https://schema.org/digestive_problem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/digestive_problem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/SomaticSymptoms> .
+<https://schema.org/digestive_problem> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/eating_disturbance> .
+# 
+# https://schema.org/eating_disturbance
+# 
+# https://schema.org/diminished_interest
+<https://schema.org/diminished_interest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/diminished_interest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+<https://schema.org/diminished_interest> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/diminished_pleasure> .
+<https://schema.org/diminished_interest> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/loss_of_pleasure> .
+# 
+# https://schema.org/diminished_pleasure
+# 
+# https://schema.org/loss_of_pleasure
+# 
+# https://schema.org/diminished_pleasure
+<https://schema.org/diminished_pleasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/diminished_pleasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+<https://schema.org/diminished_pleasure> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/loss_of_pleasure> .
+# 
+# https://schema.org/loss_of_pleasure
+# 
+# https://schema.org/discouragement
+<https://schema.org/discouragement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/discouragement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+# 
+# https://schema.org/eating_disturbance
+<https://schema.org/eating_disturbance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/eating_disturbance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/SomaticSymptoms> .
+<https://schema.org/eating_disturbance> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/eating_problem> .
+<https://schema.org/eating_disturbance> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/excessive_eating> .
+<https://schema.org/eating_disturbance> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/over_eating> .
+# 
+# https://schema.org/eating_problem
+# 
+# https://schema.org/excessive_eating
+# 
+# https://schema.org/over_eating
+# 
+# https://schema.org/eating_problem
+<https://schema.org/eating_problem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/eating_problem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/SomaticSymptoms> .
+# 
+# https://schema.org/empty
+<https://schema.org/empty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/empty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+# 
+# https://schema.org/excessive_eating
+<https://schema.org/excessive_eating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/excessive_eating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/SomaticSymptoms> .
+<https://schema.org/excessive_eating> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/over_eating> .
+# 
+# https://schema.org/over_eating
+# 
+# https://schema.org/excessive_sleeping
+<https://schema.org/excessive_sleeping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/excessive_sleeping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/SomaticSymptoms> .
+<https://schema.org/excessive_sleeping> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/over_sleeping> .
+<https://schema.org/excessive_sleeping> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/sleeping_disturbance> .
+<https://schema.org/excessive_sleeping> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/sleeping_too_much> .
+# 
+# https://schema.org/over_sleeping
+# 
+# https://schema.org/sleeping_disturbance
+# 
+# https://schema.org/sleeping_too_much
+# 
+# https://schema.org/feeling_of_grief
+<https://schema.org/feeling_of_grief> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/feeling_of_grief> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+# 
+# https://schema.org/feeling_of_hopelessness
+<https://schema.org/feeling_of_hopelessness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/feeling_of_hopelessness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+<https://schema.org/feeling_of_hopelessness> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/helplessness> .
+# 
+# https://schema.org/helplessness
+# 
+# https://schema.org/feeling_of_sadness
+<https://schema.org/feeling_of_sadness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/feeling_of_sadness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+<https://schema.org/feeling_of_sadness> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/sadness> .
+# 
+# https://schema.org/sadness
+# 
+# https://schema.org/feeling_of_tired
+<https://schema.org/feeling_of_tired> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/feeling_of_tired> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+<https://schema.org/feeling_of_tired> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/loss_of_energy> .
+<https://schema.org/feeling_of_tired> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/reduced_energy> .
+<https://schema.org/feeling_of_tired> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/tire> .
+<https://schema.org/feeling_of_tired> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/tired> .
+# 
+# https://schema.org/loss_of_energy
+# 
+# https://schema.org/reduced_energy
+# 
+# https://schema.org/tire
+# 
+# https://schema.org/tired
+# 
+# https://schema.org/feeling_of_unhappiness
+<https://schema.org/feeling_of_unhappiness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/feeling_of_unhappiness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+<https://schema.org/feeling_of_unhappiness> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/sad> .
+# 
+# https://schema.org/sad
+# 
+# https://schema.org/feeling_of_worry
+<https://schema.org/feeling_of_worry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/feeling_of_worry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+<https://schema.org/feeling_of_worry> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/worry> .
+# 
+# https://schema.org/worry
+# 
+# https://schema.org/feeling_of_worthlessness
+<https://schema.org/feeling_of_worthlessness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/feeling_of_worthlessness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+<https://schema.org/feeling_of_worthlessness> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/worthlessness> .
+# 
+# https://schema.org/worthlessness
+# 
+# https://schema.org/guilty
+<https://schema.org/guilty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/guilty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+# 
+# https://schema.org/headache
+<https://schema.org/headache> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/headache> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+<https://schema.org/headache> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/pain> .
+# 
+# https://schema.org/pain
+# 
+# https://schema.org/helpless
+<https://schema.org/helpless> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/helpless> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+<https://schema.org/helpless> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/helplessness> .
+# 
+# https://schema.org/helplessness
+# 
+# https://schema.org/helplessness
+<https://schema.org/helplessness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/helplessness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+# 
+# https://schema.org/hopeless
+<https://schema.org/hopeless> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/hopeless> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+<https://schema.org/hopeless> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/hopelessness> .
+# 
+# https://schema.org/hopelessness
+# 
+# https://schema.org/hopelessness
+<https://schema.org/hopelessness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/hopelessness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+# 
+# https://schema.org/insomania
+<https://schema.org/insomania> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/insomania> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/SomaticSymptoms> .
+<https://schema.org/insomania> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/sleeping_disturbance> .
+# 
+# https://schema.org/sleeping_disturbance
+# 
+# https://schema.org/irritable
+<https://schema.org/irritable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/irritable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+# 
+# https://schema.org/loss_of_appetite
+<https://schema.org/loss_of_appetite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/loss_of_appetite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+# 
+# https://schema.org/loss_of_energy
+<https://schema.org/loss_of_energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/loss_of_energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+<https://schema.org/loss_of_energy> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/reduced_energy> .
+<https://schema.org/loss_of_energy> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/tire> .
+<https://schema.org/loss_of_energy> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/tired> .
+# 
+# https://schema.org/reduced_energy
+# 
+# https://schema.org/tire
+# 
+# https://schema.org/tired
+# 
+# https://schema.org/loss_of_pleasure
+<https://schema.org/loss_of_pleasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/loss_of_pleasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+# 
+# https://schema.org/low_mood
+<https://schema.org/low_mood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/low_mood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+# 
+# https://schema.org/low_self_esteem
+<https://schema.org/low_self_esteem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/low_self_esteem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+# 
+# https://schema.org/memory_problem
+<https://schema.org/memory_problem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/memory_problem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+# 
+# https://schema.org/not_able_to_sleep
+<https://schema.org/not_able_to_sleep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/not_able_to_sleep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/SomaticSymptoms> .
+<https://schema.org/not_able_to_sleep> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/sleeping_disturbance> .
+<https://schema.org/not_able_to_sleep> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/sleeping_problem> .
+<https://schema.org/not_able_to_sleep> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/unable_to_sleep> .
+# 
+# https://schema.org/sleeping_disturbance
+# 
+# https://schema.org/sleeping_problem
+# 
+# https://schema.org/unable_to_sleep
+# 
+# https://schema.org/over_eating
+<https://schema.org/over_eating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/over_eating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/SomaticSymptoms> .
+# 
+# https://schema.org/over_sleeping
+<https://schema.org/over_sleeping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/over_sleeping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/SomaticSymptoms> .
+<https://schema.org/over_sleeping> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/sleeping_disturbance> .
+<https://schema.org/over_sleeping> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/sleeping_too_much> .
+# 
+# https://schema.org/sleeping_disturbance
+# 
+# https://schema.org/sleeping_too_much
+# 
+# https://schema.org/pain
+<https://schema.org/pain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/pain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+# 
+# https://schema.org/reduced_energy
+<https://schema.org/reduced_energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/reduced_energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+<https://schema.org/reduced_energy> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/tire> .
+<https://schema.org/reduced_energy> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/tired> .
+# 
+# https://schema.org/tire
+# 
+# https://schema.org/tired
+# 
+# https://schema.org/remembering_details_problem
+<https://schema.org/remembering_details_problem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/remembering_details_problem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+# 
+# https://schema.org/restless
+<https://schema.org/restless> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/restless> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+<https://schema.org/restless> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/restlessness> .
+# 
+# https://schema.org/restlessness
+# 
+# https://schema.org/restlessness
+<https://schema.org/restlessness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/restlessness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+# 
+# https://schema.org/sad
+<https://schema.org/sad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/sad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+<https://schema.org/sad> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/sadness> .
+# 
+# https://schema.org/sadness
+# 
+# https://schema.org/sadness
+<https://schema.org/sadness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/sadness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+# 
+# https://schema.org/shame
+<https://schema.org/shame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/shame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+# 
+# https://schema.org/sleeping_disturbance
+<https://schema.org/sleeping_disturbance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/sleeping_disturbance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/SomaticSymptoms> .
+<https://schema.org/sleeping_disturbance> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/sleeping_problem> .
+<https://schema.org/sleeping_disturbance> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/unable_to_sleep> .
+# 
+# https://schema.org/sleeping_problem
+# 
+# https://schema.org/unable_to_sleep
+# 
+# https://schema.org/sleeping_problem
+<https://schema.org/sleeping_problem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/sleeping_problem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/SomaticSymptoms> .
+<https://schema.org/sleeping_problem> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/sleeping_too_much> .
+<https://schema.org/sleeping_problem> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/unable_to_sleep> .
+# 
+# https://schema.org/sleeping_too_much
+# 
+# https://schema.org/unable_to_sleep
+# 
+# https://schema.org/sleeping_too_much
+<https://schema.org/sleeping_too_much> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/sleeping_too_much> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/SomaticSymptoms> .
+# 
+# https://schema.org/social_withdraw
+<https://schema.org/social_withdraw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/social_withdraw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+<https://schema.org/social_withdraw> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/social_withdrawal> .
+# 
+# https://schema.org/social_withdrawal
+# 
+# https://schema.org/social_withdrawal
+<https://schema.org/social_withdrawal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/social_withdrawal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+# 
+# https://schema.org/the_blue
+<https://schema.org/the_blue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/the_blue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+<https://schema.org/the_blue> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/the_blues> .
+# 
+# https://schema.org/the_blues
+# 
+# https://schema.org/the_blues
+<https://schema.org/the_blues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/the_blues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+# 
+# https://schema.org/thought_of_death
+<https://schema.org/thought_of_death> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/thought_of_death> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+<https://schema.org/thought_of_death> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/thought_of_suicide> .
+# 
+# https://schema.org/thought_of_suicide
+# 
+# https://schema.org/thought_of_suicide
+<https://schema.org/thought_of_suicide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/thought_of_suicide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+# 
+# https://schema.org/tire
+<https://schema.org/tire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/tire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+<https://schema.org/tire> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/tired> .
+# 
+# https://schema.org/tired
+# 
+# https://schema.org/tired
+<https://schema.org/tired> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/tired> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+# 
+# https://schema.org/unable_to_sleep
+<https://schema.org/unable_to_sleep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/unable_to_sleep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/SomaticSymptoms> .
+# 
+# https://schema.org/worry
+<https://schema.org/worry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/worry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+# 
+# https://schema.org/worthless
+<https://schema.org/worthless> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/worthless> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+<https://schema.org/worthless> <http://www.w3.org/2002/07/owl#sameAs> <https://schema.org/worthlessness> .
+# 
+# https://schema.org/worthlessness
+# 
+# https://schema.org/worthlessness
+<https://schema.org/worthlessness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/worthlessness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+# 
+_:genid1 <http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasExpertise> "" .
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

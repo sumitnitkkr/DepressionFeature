@@ -1,69 +1,109 @@
 {
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
-    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "https://schema.org" ],
-    "iri" : "http://www.semanticweb.org/admin/ontologies/2022/4/untitled-ontology-30"
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://schema.org", "http://purl.obolibrary.org/obo", "http://purl.bioontology.org/ontology/SNOMEDCT", "http://www.w3.org/2001/XMLSchema", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl", "http://www.lexinfo.net/ontology/2.0/lexinfo", "http://purl.bioontology.org/ontology/MEDLINEPLUS", "http://purl.org/linguistics/gold", "http://www.w3.org/2000/01/rdf-schema", "https://schema.org", "http://contextus.net/ontology/ontomedia/ext/common/being", "http://xmlns.com/foaf/0.1", "http://rdfs.org/sioc/ns", "https://w3id.org/timebank", "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12" ],
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12"
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "3",
-    "type" : "owl:Class"
-  }, {
-    "id" : "5",
-    "type" : "owl:Class"
-  }, {
-    "id" : "20",
-    "type" : "owl:Class"
-  }, {
-    "id" : "13",
-    "type" : "owl:Class"
-  }, {
-    "id" : "21",
-    "type" : "owl:Class"
-  }, {
-    "id" : "7",
-    "type" : "owl:Class"
-  }, {
-    "id" : "1",
-    "type" : "owl:Class"
-  }, {
-    "id" : "25",
-    "type" : "owl:Class"
-  }, {
-    "id" : "11",
-    "type" : "owl:Class"
-  }, {
-    "id" : "19",
+    "id" : "0",
     "type" : "owl:Class"
   }, {
     "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
+    "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "26",
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
     "type" : "owl:Class"
   }, {
     "id" : "17",
     "type" : "owl:Class"
   }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Literal"
+  }, {
     "id" : "24",
     "type" : "owl:Class"
   }, {
-    "id" : "4",
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "https://schema.org/Phrases",
-    "baseIri" : "https://schema.org",
+    "iri" : "http://schema.org/Physician",
+    "baseIri" : "http://schema.org",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Phrases"
+      "IRI-based" : "Physician"
     },
     "attributes" : [ "external" ],
-    "id" : "3",
-    "superClasses" : [ "4" ]
+    "id" : "0",
+    "superClasses" : [ "1" ]
   }, {
     "iri" : "https://schema.org/Trigrams",
     "baseIri" : "https://schema.org",
@@ -72,18 +112,8 @@
       "IRI-based" : "Trigrams"
     },
     "attributes" : [ "external" ],
-    "id" : "5",
-    "superClasses" : [ "4" ]
-  }, {
-    "iri" : "https://schema.org/OCD",
-    "baseIri" : "https://schema.org",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "OCD"
-    },
-    "attributes" : [ "external" ],
-    "id" : "20",
-    "superClasses" : [ "2" ]
+    "id" : "2",
+    "superClasses" : [ "3" ]
   }, {
     "iri" : "https://schema.org/Unigrams",
     "baseIri" : "https://schema.org",
@@ -92,98 +122,153 @@
       "IRI-based" : "Unigrams"
     },
     "attributes" : [ "external" ],
-    "id" : "13",
-    "superClasses" : [ "4" ]
+    "id" : "4",
+    "superClasses" : [ "3" ]
   }, {
-    "iri" : "https://schema.org/PTSD",
-    "baseIri" : "https://schema.org",
+    "iri" : "http://purl.obolibrary.org/obo/MFOEM_000028",
+    "baseIri" : "http://purl.obolibrary.org/obo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "PTSD"
+      "IRI-based" : "MFOEM_000028",
+      "undefined" : "Anxiety"
     },
     "attributes" : [ "external" ],
-    "id" : "21",
-    "superClasses" : [ "2" ]
+    "id" : "5",
+    "superClasses" : [ "6" ]
   }, {
-    "iri" : "https://schema.org/Depression",
-    "baseIri" : "https://schema.org",
+    "iri" : "http://purl.bioontology.org/ontology/SNOMEDCT/197480006",
+    "baseIri" : "http://purl.bioontology.org/ontology/SNOMEDCT",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Depression"
+      "IRI-based" : "197480006",
+      "undefined" : "AnxietyDisorder"
     },
     "attributes" : [ "external" ],
     "id" : "7",
-    "superClasses" : [ "2" ]
+    "superClasses" : [ "8" ]
   }, {
-    "iri" : "https://schema.org/Feature",
+    "iri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28143",
+    "baseIri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "C28143",
+      "undefined" : "ControlGroup"
+    },
+    "attributes" : [ "external" ],
+    "id" : "17",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "https://schema.org/SomaticSymptoms",
     "baseIri" : "https://schema.org",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Feature"
+      "IRI-based" : "SomaticSymptoms"
     },
-    "subClasses" : [ "19", "24", "4", "25", "26" ],
+    "individuals" : [ {
+      "iri" : "https://schema.org/digestive_problem",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "digestive_problem"
+      }
+    }, {
+      "iri" : "https://schema.org/insomania",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "insomania"
+      }
+    }, {
+      "iri" : "https://schema.org/excessive_sleeping",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "excessive_sleeping"
+      }
+    }, {
+      "iri" : "https://schema.org/eating_disturbance",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "eating_disturbance"
+      }
+    }, {
+      "iri" : "https://schema.org/excessive_eating",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "excessive_eating"
+      }
+    }, {
+      "iri" : "https://schema.org/not_able_to_sleep",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "not_able_to_sleep"
+      }
+    }, {
+      "iri" : "https://schema.org/change_in_sleeping_habit",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "change_in_sleeping_habit"
+      }
+    }, {
+      "iri" : "https://schema.org/over_sleeping",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "over_sleeping"
+      }
+    }, {
+      "iri" : "https://schema.org/unable_to_sleep",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "unable_to_sleep"
+      }
+    }, {
+      "iri" : "https://schema.org/over_eating",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "over_eating"
+      }
+    }, {
+      "iri" : "https://schema.org/change_in_eating_habit",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "change_in_eating_habit"
+      }
+    }, {
+      "iri" : "https://schema.org/sleeping_too_much",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "sleeping_too_much"
+      }
+    }, {
+      "iri" : "https://schema.org/sleeping_disturbance",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "sleeping_disturbance"
+      }
+    }, {
+      "iri" : "https://schema.org/eating_problem",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "eating_problem"
+      }
+    }, {
+      "iri" : "https://schema.org/sleeping_problem",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "sleeping_problem"
+      }
+    } ],
     "attributes" : [ "external" ],
-    "id" : "1"
+    "id" : "13",
+    "superClasses" : [ "14" ]
   }, {
-    "iri" : "https://schema.org/Topics",
-    "baseIri" : "https://schema.org",
+    "iri" : "http://purl.bioontology.org/ontology/MEDLINEPLUS/C0038436",
+    "baseIri" : "http://purl.bioontology.org/ontology/MEDLINEPLUS",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Topics"
+      "IRI-based" : "C0038436",
+      "undefined" : "PostTraumaticStressDisorder"
     },
     "attributes" : [ "external" ],
-    "id" : "25",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "https://schema.org/Control",
-    "baseIri" : "https://schema.org",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Control"
-    },
-    "attributes" : [ "external" ],
-    "id" : "11",
-    "superClasses" : [ "2" ]
-  }, {
-    "iri" : "https://schema.org/Emoticons",
-    "baseIri" : "https://schema.org",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Emoticons"
-    },
-    "attributes" : [ "external" ],
-    "id" : "19",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "https://schema.org/User",
-    "baseIri" : "https://schema.org",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "User"
-    },
-    "subClasses" : [ "20", "21", "7", "9", "11" ],
-    "attributes" : [ "external" ],
-    "id" : "2"
-  }, {
-    "iri" : "https://schema.org/Anxiety",
-    "baseIri" : "https://schema.org",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Anxiety"
-    },
-    "attributes" : [ "external" ],
-    "id" : "9",
-    "superClasses" : [ "2" ]
-  }, {
-    "iri" : "https://schema.org/Psycholinguistics",
-    "baseIri" : "https://schema.org",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Psycholinguistics"
-    },
-    "attributes" : [ "external" ],
-    "id" : "26",
-    "superClasses" : [ "1" ]
+    "id" : "18",
+    "superClasses" : [ "8" ]
   }, {
     "iri" : "https://schema.org/Bigrams",
     "baseIri" : "https://schema.org",
@@ -192,8 +277,8 @@
       "IRI-based" : "Bigrams"
     },
     "attributes" : [ "external" ],
-    "id" : "17",
-    "superClasses" : [ "4" ]
+    "id" : "19",
+    "superClasses" : [ "3" ]
   }, {
     "iri" : "https://schema.org/Affective",
     "baseIri" : "https://schema.org",
@@ -202,8 +287,30 @@
       "IRI-based" : "Affective"
     },
     "attributes" : [ "external" ],
-    "id" : "24",
+    "id" : "21",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://rdfs.org/sioc/ns#UserAccount",
+    "baseIri" : "http://rdfs.org/sioc/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UserAccount",
+      "undefined" : "SocialMediaUser"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
     "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/topic",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "topic",
+      "undefined" : "Topics"
+    },
+    "attributes" : [ "external" ],
+    "id" : "27",
+    "superClasses" : [ "22" ]
   }, {
     "iri" : "https://schema.org/Content",
     "baseIri" : "https://schema.org",
@@ -211,19 +318,487 @@
     "label" : {
       "IRI-based" : "Content"
     },
-    "subClasses" : [ "13", "3", "5", "17" ],
+    "subClasses" : [ "4", "2", "24", "19" ],
     "attributes" : [ "external" ],
-    "id" : "4",
+    "id" : "3",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/MEDLINEPLUS/C0028768",
+    "baseIri" : "http://purl.bioontology.org/ontology/MEDLINEPLUS",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "C0028768",
+      "undefined" : "ObsessiveCompulsiveDisorder"
+    },
+    "attributes" : [ "external" ],
+    "id" : "36",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "subClasses" : [ "11", "0", "16" ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/timebank#MentalDisorder",
+    "baseIri" : "https://w3id.org/timebank",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MentalDisorder"
+    },
+    "subClasses" : [ "17", "7", "40", "36", "18" ],
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://purl.org/linguistics/gold/feature",
+    "baseIri" : "http://purl.org/linguistics/gold",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "feature",
+      "undefined" : "Features\n"
+    },
+    "subClasses" : [ "45", "21", "27", "3", "6" ],
+    "attributes" : [ "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://schema.org/Patient",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Patient"
+    },
+    "attributes" : [ "external" ],
+    "id" : "11",
     "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "52",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://purl.org/linguistics/gold/Phrase",
+    "baseIri" : "http://purl.org/linguistics/gold",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Phrase"
+    },
+    "attributes" : [ "external" ],
+    "id" : "24",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2982",
+    "baseIri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "C2982",
+      "undefined" : "DepressionDisorder"
+    },
+    "attributes" : [ "external" ],
+    "id" : "40",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://rdfs.org/sioc/ns#Post",
+    "baseIri" : "http://rdfs.org/sioc/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Post",
+      "undefined" : "SocialPost"
+    },
+    "attributes" : [ "external" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MFOEM_000009",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MFOEM_000009",
+      "undefined" : "Anger"
+    },
+    "attributes" : [ "external" ],
+    "id" : "35",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://schema.org/Emoticons",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Emoticons"
+    },
+    "attributes" : [ "external" ],
+    "id" : "45",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.lexinfo.net/ontology/2.0/lexinfo#Pronoun",
+    "baseIri" : "http://www.lexinfo.net/ontology/2.0/lexinfo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Pronoun"
+    },
+    "attributes" : [ "external" ],
+    "id" : "30",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://schema.org/Psycholinguistics",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Psycholinguistics"
+    },
+    "subClasses" : [ "5", "32", "30", "35" ],
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MFOEM_000056",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MFOEM_000056",
+      "undefined" : "Sadness"
+    },
+    "attributes" : [ "external" ],
+    "id" : "32",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876",
+    "baseIri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "C4876",
+      "undefined" : "Symptoms"
+    },
+    "individuals" : [ {
+      "iri" : "https://schema.org/feeling_of_tired",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "feeling_of_tired"
+      }
+    }, {
+      "iri" : "https://schema.org/helpless",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "helpless"
+      }
+    }, {
+      "iri" : "https://schema.org/ashamed",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "ashamed"
+      }
+    }, {
+      "iri" : "https://schema.org/appetite_loss",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "appetite_loss"
+      }
+    }, {
+      "iri" : "https://schema.org/diminished_interest",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "diminished_interest"
+      }
+    }, {
+      "iri" : "https://schema.org/social_withdraw",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "social_withdraw"
+      }
+    }, {
+      "iri" : "https://schema.org/worthless",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "worthless"
+      }
+    }, {
+      "iri" : "https://schema.org/diminished_pleasure",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "diminished_pleasure"
+      }
+    }, {
+      "iri" : "https://schema.org/thought_of_death",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "thought_of_death"
+      }
+    }, {
+      "iri" : "https://schema.org/feeling_of_hopelessness",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "feeling_of_hopelessness"
+      }
+    }, {
+      "iri" : "https://schema.org/guilty",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "guilty"
+      }
+    }, {
+      "iri" : "https://schema.org/memory_problem",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "memory_problem"
+      }
+    }, {
+      "iri" : "https://schema.org/restlessness",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "restlessness"
+      }
+    }, {
+      "iri" : "https://schema.org/reduced_energy",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "reduced_energy"
+      }
+    }, {
+      "iri" : "https://schema.org/remembering_details_problem",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "remembering_details_problem"
+      }
+    }, {
+      "iri" : "https://schema.org/anxious",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "anxious"
+      }
+    }, {
+      "iri" : "https://schema.org/loss_of_appetite",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "loss_of_appetite"
+      }
+    }, {
+      "iri" : "https://schema.org/shame",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "shame"
+      }
+    }, {
+      "iri" : "https://schema.org/restless",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "restless"
+      }
+    }, {
+      "iri" : "https://schema.org/thought_of_suicide",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "thought_of_suicide"
+      }
+    }, {
+      "iri" : "https://schema.org/feeling_of_worthlessness",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "feeling_of_worthlessness"
+      }
+    }, {
+      "iri" : "https://schema.org/loss_of_energy",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "loss_of_energy"
+      }
+    }, {
+      "iri" : "https://schema.org/low_mood",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "low_mood"
+      }
+    }, {
+      "iri" : "https://schema.org/anxiety",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "anxiety"
+      }
+    }, {
+      "iri" : "https://schema.org/irritable",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "irritable"
+      }
+    }, {
+      "iri" : "https://schema.org/sad",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "sad"
+      }
+    }, {
+      "iri" : "https://schema.org/sadness",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "sadness"
+      }
+    }, {
+      "iri" : "https://schema.org/ache",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "ache"
+      }
+    }, {
+      "iri" : "https://schema.org/discouragement",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "discouragement"
+      }
+    }, {
+      "iri" : "https://schema.org/worry",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "worry"
+      }
+    }, {
+      "iri" : "https://schema.org/pain",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "pain"
+      }
+    }, {
+      "iri" : "https://schema.org/feeling_of_worry",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "feeling_of_worry"
+      }
+    }, {
+      "iri" : "https://schema.org/hopeless",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "hopeless"
+      }
+    }, {
+      "iri" : "https://schema.org/the_blue",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "the_blue"
+      }
+    }, {
+      "iri" : "https://schema.org/social_withdrawal",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "social_withdrawal"
+      }
+    }, {
+      "iri" : "https://schema.org/despair",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "despair"
+      }
+    }, {
+      "iri" : "https://schema.org/hopelessness",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "hopelessness"
+      }
+    }, {
+      "iri" : "https://schema.org/feeling_of_grief",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "feeling_of_grief"
+      }
+    }, {
+      "iri" : "https://schema.org/loss_of_pleasure",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "loss_of_pleasure"
+      }
+    }, {
+      "iri" : "https://schema.org/worthlessness",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "worthlessness"
+      }
+    }, {
+      "iri" : "https://schema.org/concentration_problem",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "concentration_problem"
+      }
+    }, {
+      "iri" : "https://schema.org/low_self_esteem",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "low_self_esteem"
+      }
+    }, {
+      "iri" : "https://schema.org/headache",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "headache"
+      }
+    }, {
+      "iri" : "https://schema.org/feeling_of_sadness",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "feeling_of_sadness"
+      }
+    }, {
+      "iri" : "https://schema.org/cramps",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "cramps"
+      }
+    }, {
+      "iri" : "https://schema.org/cramp",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "cramp"
+      }
+    }, {
+      "iri" : "https://schema.org/helplessness",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "helplessness"
+      }
+    }, {
+      "iri" : "https://schema.org/tire",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "tire"
+      }
+    }, {
+      "iri" : "https://schema.org/feeling_of_unhappiness",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "feeling_of_unhappiness"
+      }
+    }, {
+      "iri" : "https://schema.org/tired",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "tired"
+      }
+    }, {
+      "iri" : "https://schema.org/the_blues",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "the_blues"
+      }
+    }, {
+      "iri" : "https://schema.org/empty",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "empty"
+      }
+    } ],
+    "subClasses" : [ "13" ],
+    "attributes" : [ "external" ],
+    "id" : "14"
   } ],
   "property" : [ {
-    "id" : "0",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "6",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "8",
+    "id" : "9",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "10",
@@ -232,25 +807,19 @@
     "id" : "12",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "14",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "15",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "16",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "18",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "22",
-    "type" : "rdfs:SubClassOf"
+    "id" : "20",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "23",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "27",
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "28",
@@ -259,88 +828,229 @@
     "id" : "29",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "30",
+    "id" : "31",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "https://schema.org/belongsTo",
-    "baseIri" : "https://schema.org",
-    "range" : "2",
-    "label" : {
-      "IRI-based" : "belongsTo"
-    },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "0"
-  }, {
-    "range" : "2",
-    "domain" : "7",
+    "range" : "1",
+    "domain" : "0",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "6"
+    "id" : "9"
   }, {
-    "range" : "2",
-    "domain" : "9",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "8"
-  }, {
-    "range" : "2",
+    "range" : "1",
     "domain" : "11",
     "attributes" : [ "object", "anonymous" ],
     "id" : "10"
   }, {
-    "range" : "4",
+    "range" : "14",
     "domain" : "13",
     "attributes" : [ "object", "anonymous" ],
     "id" : "12"
   }, {
-    "range" : "4",
-    "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "14"
-  }, {
-    "range" : "4",
-    "domain" : "5",
+    "range" : "1",
+    "domain" : "16",
     "attributes" : [ "object", "anonymous" ],
     "id" : "15"
   }, {
-    "range" : "4",
-    "domain" : "17",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "16"
+    "iri" : "http://contextus.net/ontology/ontomedia/ext/common/being#has-mental-disorder",
+    "baseIri" : "http://contextus.net/ontology/ontomedia/ext/common/being",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "has-mental-disorder"
+    },
+    "domain" : "11",
+    "attributes" : [ "object", "external" ],
+    "id" : "20"
   }, {
-    "range" : "1",
-    "domain" : "19",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "18"
-  }, {
-    "range" : "2",
-    "domain" : "20",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "22"
-  }, {
-    "range" : "2",
-    "domain" : "21",
+    "range" : "3",
+    "domain" : "24",
     "attributes" : [ "object", "anonymous" ],
     "id" : "23"
   }, {
-    "range" : "1",
-    "domain" : "26",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "27"
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#has_cured",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "has_cured"
+    },
+    "domain" : "0",
+    "attributes" : [ "object" ],
+    "id" : "25"
   }, {
-    "range" : "1",
-    "domain" : "24",
+    "range" : "3",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "range" : "3",
+    "domain" : "19",
     "attributes" : [ "object", "anonymous" ],
     "id" : "28"
   }, {
-    "range" : "1",
-    "domain" : "25",
+    "range" : "6",
+    "domain" : "30",
     "attributes" : [ "object", "anonymous" ],
     "id" : "29"
   }, {
-    "range" : "1",
+    "range" : "6",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "range" : "3",
     "domain" : "4",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "30"
+    "id" : "33"
+  }, {
+    "range" : "6",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "22",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "22",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#has-post",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "has-post"
+    },
+    "domain" : "16",
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "range" : "8",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
+  }, {
+    "range" : "8",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "range" : "8",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "47"
+  }, {
+    "range" : "8",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "48"
+  }, {
+    "range" : "22",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "range" : "22",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "range" : "22",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#has_symptom",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "has_symptom"
+    },
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasExpertise",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "hasExpertise"
+    },
+    "domain" : "52",
+    "attributes" : [ "datatype" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#has_feature",
+    "baseIri" : "http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "has_feature"
+    },
+    "domain" : "42",
+    "attributes" : [ "object" ],
+    "id" : "56"
   } ]
 }

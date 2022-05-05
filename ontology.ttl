@@ -1,35 +1,163 @@
-@prefix : <http://www.semanticweb.org/admin/ontologies/2022/4/untitled-ontology-30#> .
+@prefix : <http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/admin/ontologies/2022/4/untitled-ontology-30#> .
+@base <http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#> .
 
-<http://www.semanticweb.org/admin/ontologies/2022/4/untitled-ontology-30> rdf:type owl:Ontology .
+<http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12> rdf:type owl:Ontology ;
+                                                                           owl:versionIRI <http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12> .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  https://schema.org/belongsTo
-<https://schema.org/belongsTo> rdf:type owl:ObjectProperty ;
-                               rdfs:domain <https://schema.org/Feature> ;
-                               rdfs:range <https://schema.org/User> .
+###  http://contextus.net/ontology/ontomedia/ext/common/being#has-mental-disorder
+<http://contextus.net/ontology/ontomedia/ext/common/being#has-mental-disorder> rdf:type owl:ObjectProperty ;
+                                                                               rdfs:domain <http://schema.org/Patient> ;
+                                                                               rdfs:range <https://w3id.org/timebank#MentalDisorder> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#has-post
+:has-post rdf:type owl:ObjectProperty ;
+          rdfs:domain <http://rdfs.org/sioc/ns#UserAccount> ;
+          rdfs:range <http://rdfs.org/sioc/ns#Post> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#has_cured
+:has_cured rdf:type owl:ObjectProperty ;
+           rdfs:domain <http://schema.org/Physician> ;
+           rdfs:range <http://schema.org/Patient> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#has_feature
+:has_feature rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://rdfs.org/sioc/ns#Post> ;
+             rdfs:range <http://purl.org/linguistics/gold/feature> .
+
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#has_symptom
+:has_symptom rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://schema.org/Patient> ;
+             rdfs:range <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/sumit/ontologies/2022/4/untitled-ontology-12#hasExpertise
+:hasExpertise rdf:type owl:DatatypeProperty .
 
 
 #################################################################
 #    Classes
 #################################################################
 
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28143
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28143> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <https://w3id.org/timebank#MentalDisorder> ;
+                                                            rdfs:label "ControlGroup" .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2982
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2982> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <https://w3id.org/timebank#MentalDisorder> ;
+                                                           rdfs:label "DepressionDisorder" .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> rdf:type owl:Class ;
+                                                           rdfs:label "Symptoms" .
+
+
+###  http://purl.bioontology.org/ontology/MEDLINEPLUS/C0028768
+<http://purl.bioontology.org/ontology/MEDLINEPLUS/C0028768> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <https://w3id.org/timebank#MentalDisorder> ;
+                                                            rdfs:label "ObsessiveCompulsiveDisorder" .
+
+
+###  http://purl.bioontology.org/ontology/MEDLINEPLUS/C0038436
+<http://purl.bioontology.org/ontology/MEDLINEPLUS/C0038436> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <https://w3id.org/timebank#MentalDisorder> ;
+                                                            rdfs:label "PostTraumaticStressDisorder" .
+
+
+###  http://purl.bioontology.org/ontology/SNOMEDCT/197480006
+<http://purl.bioontology.org/ontology/SNOMEDCT/197480006> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <https://w3id.org/timebank#MentalDisorder> ;
+                                                          rdfs:label "AnxietyDisorder" .
+
+
+###  http://purl.obolibrary.org/obo/MFOEM_000009
+<http://purl.obolibrary.org/obo/MFOEM_000009> rdf:type owl:Class ;
+                                              rdfs:subClassOf <https://schema.org/Psycholinguistics> ;
+                                              rdfs:label "Anger" .
+
+
+###  http://purl.obolibrary.org/obo/MFOEM_000028
+<http://purl.obolibrary.org/obo/MFOEM_000028> rdf:type owl:Class ;
+                                              rdfs:subClassOf <https://schema.org/Psycholinguistics> ;
+                                              rdfs:label "Anxiety" .
+
+
+###  http://purl.obolibrary.org/obo/MFOEM_000056
+<http://purl.obolibrary.org/obo/MFOEM_000056> rdf:type owl:Class ;
+                                              rdfs:subClassOf <https://schema.org/Psycholinguistics> ;
+                                              rdfs:label "Sadness" .
+
+
+###  http://purl.org/linguistics/gold/Phrase
+<http://purl.org/linguistics/gold/Phrase> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://schema.org/Content> .
+
+
+###  http://purl.org/linguistics/gold/feature
+<http://purl.org/linguistics/gold/feature> rdf:type owl:Class ;
+                                           rdfs:label """Features
+""" .
+
+
+###  http://rdfs.org/sioc/ns#Post
+<http://rdfs.org/sioc/ns#Post> rdf:type owl:Class ;
+                               rdfs:label "SocialPost" .
+
+
+###  http://rdfs.org/sioc/ns#UserAccount
+<http://rdfs.org/sioc/ns#UserAccount> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://xmlns.com/foaf/0.1/Person> ;
+                                      rdfs:label "SocialMediaUser" .
+
+
+###  http://schema.org/Patient
+<http://schema.org/Patient> rdf:type owl:Class ;
+                            rdfs:subClassOf <http://xmlns.com/foaf/0.1/Person> .
+
+
+###  http://schema.org/Physician
+<http://schema.org/Physician> rdf:type owl:Class ;
+                              rdfs:subClassOf <http://xmlns.com/foaf/0.1/Person> .
+
+
+###  http://www.lexinfo.net/ontology/2.0/lexinfo#Pronoun
+<http://www.lexinfo.net/ontology/2.0/lexinfo#Pronoun> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://schema.org/Psycholinguistics> .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/topic
+<http://xmlns.com/foaf/0.1/topic> rdf:type owl:Class ;
+                                  rdfs:subClassOf <http://purl.org/linguistics/gold/feature> ;
+                                  rdfs:label "Topics" .
+
+
 ###  https://schema.org/Affective
 <https://schema.org/Affective> rdf:type owl:Class ;
-                               rdfs:subClassOf <https://schema.org/Feature> .
-
-
-###  https://schema.org/Anxiety
-<https://schema.org/Anxiety> rdf:type owl:Class ;
-                             rdfs:subClassOf <https://schema.org/User> .
+                               rdfs:subClassOf <http://purl.org/linguistics/gold/feature> .
 
 
 ###  https://schema.org/Bigrams
@@ -39,51 +167,22 @@
 
 ###  https://schema.org/Content
 <https://schema.org/Content> rdf:type owl:Class ;
-                             rdfs:subClassOf <https://schema.org/Feature> .
-
-
-###  https://schema.org/Control
-<https://schema.org/Control> rdf:type owl:Class ;
-                             rdfs:subClassOf <https://schema.org/User> .
-
-
-###  https://schema.org/Depression
-<https://schema.org/Depression> rdf:type owl:Class ;
-                                rdfs:subClassOf <https://schema.org/User> .
+                             rdfs:subClassOf <http://purl.org/linguistics/gold/feature> .
 
 
 ###  https://schema.org/Emoticons
 <https://schema.org/Emoticons> rdf:type owl:Class ;
-                               rdfs:subClassOf <https://schema.org/Feature> .
-
-
-###  https://schema.org/Feature
-<https://schema.org/Feature> rdf:type owl:Class .
-
-
-###  https://schema.org/OCD
-<https://schema.org/OCD> rdf:type owl:Class ;
-                         rdfs:subClassOf <https://schema.org/User> .
-
-
-###  https://schema.org/PTSD
-<https://schema.org/PTSD> rdf:type owl:Class ;
-                          rdfs:subClassOf <https://schema.org/User> .
-
-
-###  https://schema.org/Phrases
-<https://schema.org/Phrases> rdf:type owl:Class ;
-                             rdfs:subClassOf <https://schema.org/Content> .
+                               rdfs:subClassOf <http://purl.org/linguistics/gold/feature> .
 
 
 ###  https://schema.org/Psycholinguistics
 <https://schema.org/Psycholinguistics> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://schema.org/Feature> .
+                                       rdfs:subClassOf <http://purl.org/linguistics/gold/feature> .
 
 
-###  https://schema.org/Topics
-<https://schema.org/Topics> rdf:type owl:Class ;
-                            rdfs:subClassOf <https://schema.org/Feature> .
+###  https://schema.org/SomaticSymptoms
+<https://schema.org/SomaticSymptoms> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
 
 
 ###  https://schema.org/Trigrams
@@ -96,8 +195,518 @@
                               rdfs:subClassOf <https://schema.org/Content> .
 
 
-###  https://schema.org/User
-<https://schema.org/User> rdf:type owl:Class .
+###  https://w3id.org/timebank#MentalDisorder
+<https://w3id.org/timebank#MentalDisorder> rdf:type owl:Class .
 
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://schema.org/ache
+<https://schema.org/ache> rdf:type owl:NamedIndividual ,
+                                   <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                          owl:sameAs <https://schema.org/cramp> ,
+                                     <https://schema.org/headache> ,
+                                     <https://schema.org/pain> .
+
+
+###  https://schema.org/cramp
+
+###  https://schema.org/headache
+
+###  https://schema.org/pain
+
+###  https://schema.org/anxiety
+<https://schema.org/anxiety> rdf:type owl:NamedIndividual ,
+                                      <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                             owl:sameAs <https://schema.org/anxious> .
+
+
+###  https://schema.org/anxious
+
+###  https://schema.org/anxious
+<https://schema.org/anxious> rdf:type owl:NamedIndividual ,
+                                      <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/appetite_loss
+<https://schema.org/appetite_loss> rdf:type owl:NamedIndividual ,
+                                            <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                                   owl:sameAs <https://schema.org/loss_of_appetite> .
+
+
+###  https://schema.org/loss_of_appetite
+
+###  https://schema.org/ashamed
+<https://schema.org/ashamed> rdf:type owl:NamedIndividual ,
+                                      <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                             owl:sameAs <https://schema.org/shame> .
+
+
+###  https://schema.org/shame
+
+###  https://schema.org/change_in_eating_habit
+<https://schema.org/change_in_eating_habit> rdf:type owl:NamedIndividual ,
+                                                     <https://schema.org/SomaticSymptoms> ;
+                                            owl:sameAs <https://schema.org/eating_problem> .
+
+
+###  https://schema.org/eating_problem
+
+###  https://schema.org/change_in_sleeping_habit
+<https://schema.org/change_in_sleeping_habit> rdf:type owl:NamedIndividual ,
+                                                       <https://schema.org/SomaticSymptoms> ;
+                                              owl:sameAs <https://schema.org/sleeping_problem> .
+
+
+###  https://schema.org/sleeping_problem
+
+###  https://schema.org/concentration_problem
+<https://schema.org/concentration_problem> rdf:type owl:NamedIndividual ,
+                                                    <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/cramp
+<https://schema.org/cramp> rdf:type owl:NamedIndividual ,
+                                    <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                           owl:sameAs <https://schema.org/cramps> ,
+                                      <https://schema.org/pain> .
+
+
+###  https://schema.org/cramps
+
+###  https://schema.org/pain
+
+###  https://schema.org/cramps
+<https://schema.org/cramps> rdf:type owl:NamedIndividual ,
+                                     <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                            owl:sameAs <https://schema.org/headache> .
+
+
+###  https://schema.org/headache
+
+###  https://schema.org/despair
+<https://schema.org/despair> rdf:type owl:NamedIndividual ,
+                                      <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/digestive_problem
+<https://schema.org/digestive_problem> rdf:type owl:NamedIndividual ,
+                                                <https://schema.org/SomaticSymptoms> ;
+                                       owl:sameAs <https://schema.org/eating_disturbance> .
+
+
+###  https://schema.org/eating_disturbance
+
+###  https://schema.org/diminished_interest
+<https://schema.org/diminished_interest> rdf:type owl:NamedIndividual ,
+                                                  <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                                         owl:sameAs <https://schema.org/diminished_pleasure> ,
+                                                    <https://schema.org/loss_of_pleasure> .
+
+
+###  https://schema.org/diminished_pleasure
+
+###  https://schema.org/loss_of_pleasure
+
+###  https://schema.org/diminished_pleasure
+<https://schema.org/diminished_pleasure> rdf:type owl:NamedIndividual ,
+                                                  <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                                         owl:sameAs <https://schema.org/loss_of_pleasure> .
+
+
+###  https://schema.org/loss_of_pleasure
+
+###  https://schema.org/discouragement
+<https://schema.org/discouragement> rdf:type owl:NamedIndividual ,
+                                             <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/eating_disturbance
+<https://schema.org/eating_disturbance> rdf:type owl:NamedIndividual ,
+                                                 <https://schema.org/SomaticSymptoms> ;
+                                        owl:sameAs <https://schema.org/eating_problem> ,
+                                                   <https://schema.org/excessive_eating> ,
+                                                   <https://schema.org/over_eating> .
+
+
+###  https://schema.org/eating_problem
+
+###  https://schema.org/excessive_eating
+
+###  https://schema.org/over_eating
+
+###  https://schema.org/eating_problem
+<https://schema.org/eating_problem> rdf:type owl:NamedIndividual ,
+                                             <https://schema.org/SomaticSymptoms> .
+
+
+###  https://schema.org/empty
+<https://schema.org/empty> rdf:type owl:NamedIndividual ,
+                                    <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/excessive_eating
+<https://schema.org/excessive_eating> rdf:type owl:NamedIndividual ,
+                                               <https://schema.org/SomaticSymptoms> ;
+                                      owl:sameAs <https://schema.org/over_eating> .
+
+
+###  https://schema.org/over_eating
+
+###  https://schema.org/excessive_sleeping
+<https://schema.org/excessive_sleeping> rdf:type owl:NamedIndividual ,
+                                                 <https://schema.org/SomaticSymptoms> ;
+                                        owl:sameAs <https://schema.org/over_sleeping> ,
+                                                   <https://schema.org/sleeping_disturbance> ,
+                                                   <https://schema.org/sleeping_too_much> .
+
+
+###  https://schema.org/over_sleeping
+
+###  https://schema.org/sleeping_disturbance
+
+###  https://schema.org/sleeping_too_much
+
+###  https://schema.org/feeling_of_grief
+<https://schema.org/feeling_of_grief> rdf:type owl:NamedIndividual ,
+                                               <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/feeling_of_hopelessness
+<https://schema.org/feeling_of_hopelessness> rdf:type owl:NamedIndividual ,
+                                                      <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                                             owl:sameAs <https://schema.org/helplessness> .
+
+
+###  https://schema.org/helplessness
+
+###  https://schema.org/feeling_of_sadness
+<https://schema.org/feeling_of_sadness> rdf:type owl:NamedIndividual ,
+                                                 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                                        owl:sameAs <https://schema.org/sadness> .
+
+
+###  https://schema.org/sadness
+
+###  https://schema.org/feeling_of_tired
+<https://schema.org/feeling_of_tired> rdf:type owl:NamedIndividual ,
+                                               <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                                      owl:sameAs <https://schema.org/loss_of_energy> ,
+                                                 <https://schema.org/reduced_energy> ,
+                                                 <https://schema.org/tire> ,
+                                                 <https://schema.org/tired> .
+
+
+###  https://schema.org/loss_of_energy
+
+###  https://schema.org/reduced_energy
+
+###  https://schema.org/tire
+
+###  https://schema.org/tired
+
+###  https://schema.org/feeling_of_unhappiness
+<https://schema.org/feeling_of_unhappiness> rdf:type owl:NamedIndividual ,
+                                                     <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                                            owl:sameAs <https://schema.org/sad> .
+
+
+###  https://schema.org/sad
+
+###  https://schema.org/feeling_of_worry
+<https://schema.org/feeling_of_worry> rdf:type owl:NamedIndividual ,
+                                               <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                                      owl:sameAs <https://schema.org/worry> .
+
+
+###  https://schema.org/worry
+
+###  https://schema.org/feeling_of_worthlessness
+<https://schema.org/feeling_of_worthlessness> rdf:type owl:NamedIndividual ,
+                                                       <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                                              owl:sameAs <https://schema.org/worthlessness> .
+
+
+###  https://schema.org/worthlessness
+
+###  https://schema.org/guilty
+<https://schema.org/guilty> rdf:type owl:NamedIndividual ,
+                                     <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/headache
+<https://schema.org/headache> rdf:type owl:NamedIndividual ,
+                                       <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                              owl:sameAs <https://schema.org/pain> .
+
+
+###  https://schema.org/pain
+
+###  https://schema.org/helpless
+<https://schema.org/helpless> rdf:type owl:NamedIndividual ,
+                                       <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                              owl:sameAs <https://schema.org/helplessness> .
+
+
+###  https://schema.org/helplessness
+
+###  https://schema.org/helplessness
+<https://schema.org/helplessness> rdf:type owl:NamedIndividual ,
+                                           <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/hopeless
+<https://schema.org/hopeless> rdf:type owl:NamedIndividual ,
+                                       <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                              owl:sameAs <https://schema.org/hopelessness> .
+
+
+###  https://schema.org/hopelessness
+
+###  https://schema.org/hopelessness
+<https://schema.org/hopelessness> rdf:type owl:NamedIndividual ,
+                                           <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/insomania
+<https://schema.org/insomania> rdf:type owl:NamedIndividual ,
+                                        <https://schema.org/SomaticSymptoms> ;
+                               owl:sameAs <https://schema.org/sleeping_disturbance> .
+
+
+###  https://schema.org/sleeping_disturbance
+
+###  https://schema.org/irritable
+<https://schema.org/irritable> rdf:type owl:NamedIndividual ,
+                                        <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/loss_of_appetite
+<https://schema.org/loss_of_appetite> rdf:type owl:NamedIndividual ,
+                                               <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/loss_of_energy
+<https://schema.org/loss_of_energy> rdf:type owl:NamedIndividual ,
+                                             <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                                    owl:sameAs <https://schema.org/reduced_energy> ,
+                                               <https://schema.org/tire> ,
+                                               <https://schema.org/tired> .
+
+
+###  https://schema.org/reduced_energy
+
+###  https://schema.org/tire
+
+###  https://schema.org/tired
+
+###  https://schema.org/loss_of_pleasure
+<https://schema.org/loss_of_pleasure> rdf:type owl:NamedIndividual ,
+                                               <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/low_mood
+<https://schema.org/low_mood> rdf:type owl:NamedIndividual ,
+                                       <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/low_self_esteem
+<https://schema.org/low_self_esteem> rdf:type owl:NamedIndividual ,
+                                              <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/memory_problem
+<https://schema.org/memory_problem> rdf:type owl:NamedIndividual ,
+                                             <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/not_able_to_sleep
+<https://schema.org/not_able_to_sleep> rdf:type owl:NamedIndividual ,
+                                                <https://schema.org/SomaticSymptoms> ;
+                                       owl:sameAs <https://schema.org/sleeping_disturbance> ,
+                                                  <https://schema.org/sleeping_problem> ,
+                                                  <https://schema.org/unable_to_sleep> .
+
+
+###  https://schema.org/sleeping_disturbance
+
+###  https://schema.org/sleeping_problem
+
+###  https://schema.org/unable_to_sleep
+
+###  https://schema.org/over_eating
+<https://schema.org/over_eating> rdf:type owl:NamedIndividual ,
+                                          <https://schema.org/SomaticSymptoms> .
+
+
+###  https://schema.org/over_sleeping
+<https://schema.org/over_sleeping> rdf:type owl:NamedIndividual ,
+                                            <https://schema.org/SomaticSymptoms> ;
+                                   owl:sameAs <https://schema.org/sleeping_disturbance> ,
+                                              <https://schema.org/sleeping_too_much> .
+
+
+###  https://schema.org/sleeping_disturbance
+
+###  https://schema.org/sleeping_too_much
+
+###  https://schema.org/pain
+<https://schema.org/pain> rdf:type owl:NamedIndividual ,
+                                   <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/reduced_energy
+<https://schema.org/reduced_energy> rdf:type owl:NamedIndividual ,
+                                             <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                                    owl:sameAs <https://schema.org/tire> ,
+                                               <https://schema.org/tired> .
+
+
+###  https://schema.org/tire
+
+###  https://schema.org/tired
+
+###  https://schema.org/remembering_details_problem
+<https://schema.org/remembering_details_problem> rdf:type owl:NamedIndividual ,
+                                                          <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/restless
+<https://schema.org/restless> rdf:type owl:NamedIndividual ,
+                                       <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                              owl:sameAs <https://schema.org/restlessness> .
+
+
+###  https://schema.org/restlessness
+
+###  https://schema.org/restlessness
+<https://schema.org/restlessness> rdf:type owl:NamedIndividual ,
+                                           <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/sad
+<https://schema.org/sad> rdf:type owl:NamedIndividual ,
+                                  <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                         owl:sameAs <https://schema.org/sadness> .
+
+
+###  https://schema.org/sadness
+
+###  https://schema.org/sadness
+<https://schema.org/sadness> rdf:type owl:NamedIndividual ,
+                                      <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/shame
+<https://schema.org/shame> rdf:type owl:NamedIndividual ,
+                                    <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/sleeping_disturbance
+<https://schema.org/sleeping_disturbance> rdf:type owl:NamedIndividual ,
+                                                   <https://schema.org/SomaticSymptoms> ;
+                                          owl:sameAs <https://schema.org/sleeping_problem> ,
+                                                     <https://schema.org/unable_to_sleep> .
+
+
+###  https://schema.org/sleeping_problem
+
+###  https://schema.org/unable_to_sleep
+
+###  https://schema.org/sleeping_problem
+<https://schema.org/sleeping_problem> rdf:type owl:NamedIndividual ,
+                                               <https://schema.org/SomaticSymptoms> ;
+                                      owl:sameAs <https://schema.org/sleeping_too_much> ,
+                                                 <https://schema.org/unable_to_sleep> .
+
+
+###  https://schema.org/sleeping_too_much
+
+###  https://schema.org/unable_to_sleep
+
+###  https://schema.org/sleeping_too_much
+<https://schema.org/sleeping_too_much> rdf:type owl:NamedIndividual ,
+                                                <https://schema.org/SomaticSymptoms> .
+
+
+###  https://schema.org/social_withdraw
+<https://schema.org/social_withdraw> rdf:type owl:NamedIndividual ,
+                                              <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                                     owl:sameAs <https://schema.org/social_withdrawal> .
+
+
+###  https://schema.org/social_withdrawal
+
+###  https://schema.org/social_withdrawal
+<https://schema.org/social_withdrawal> rdf:type owl:NamedIndividual ,
+                                                <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/the_blue
+<https://schema.org/the_blue> rdf:type owl:NamedIndividual ,
+                                       <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                              owl:sameAs <https://schema.org/the_blues> .
+
+
+###  https://schema.org/the_blues
+
+###  https://schema.org/the_blues
+<https://schema.org/the_blues> rdf:type owl:NamedIndividual ,
+                                        <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/thought_of_death
+<https://schema.org/thought_of_death> rdf:type owl:NamedIndividual ,
+                                               <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                                      owl:sameAs <https://schema.org/thought_of_suicide> .
+
+
+###  https://schema.org/thought_of_suicide
+
+###  https://schema.org/thought_of_suicide
+<https://schema.org/thought_of_suicide> rdf:type owl:NamedIndividual ,
+                                                 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/tire
+<https://schema.org/tire> rdf:type owl:NamedIndividual ,
+                                   <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                          owl:sameAs <https://schema.org/tired> .
+
+
+###  https://schema.org/tired
+
+###  https://schema.org/tired
+<https://schema.org/tired> rdf:type owl:NamedIndividual ,
+                                    <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/unable_to_sleep
+<https://schema.org/unable_to_sleep> rdf:type owl:NamedIndividual ,
+                                              <https://schema.org/SomaticSymptoms> .
+
+
+###  https://schema.org/worry
+<https://schema.org/worry> rdf:type owl:NamedIndividual ,
+                                    <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+###  https://schema.org/worthless
+<https://schema.org/worthless> rdf:type owl:NamedIndividual ,
+                                        <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> ;
+                               owl:sameAs <https://schema.org/worthlessness> .
+
+
+###  https://schema.org/worthlessness
+
+###  https://schema.org/worthlessness
+<https://schema.org/worthlessness> rdf:type owl:NamedIndividual ,
+                                            <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C4876> .
+
+
+[ :hasExpertise ""
+] .
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
